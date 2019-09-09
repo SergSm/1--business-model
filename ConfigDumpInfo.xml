@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.5">
+	<ConfigVersions>
+		<Metadata name="Catalog.Проекты" id="cfefd9a8-2f34-43bd-af83-658d1331944b" configVersion="0d51aed4cc25104da2fbc98a079e71d600000000"/>
+		<Metadata name="CommonPicture.Channels" id="d6803b9b-a055-4672-9efe-7d68401d86fd" configVersion="0ccd36d73c33d6429c119f8aa23529c700000000"/>
+		<Metadata name="CommonPicture.Channels.Picture" id="d6803b9b-a055-4672-9efe-7d68401d86fd.0" configVersion="7f966aee22f45146a6ce1481c0c3ab2100000000"/>
+		<Metadata name="CommonPicture.Costs" id="b8090486-3d06-4667-a8b5-f82a6f37506b" configVersion="b131af92cd35014591c6b2f44d9d57fd00000000"/>
+		<Metadata name="CommonPicture.Costs.Picture" id="b8090486-3d06-4667-a8b5-f82a6f37506b.0" configVersion="32bff497dac72b4c805c82c4cbb2df8300000000"/>
+		<Metadata name="CommonPicture.CustomerRelationships" id="12f93a2c-9387-486e-8bc9-dd69d783eac7" configVersion="40ae7d6bed14fd40ae8483c3df4454aa00000000"/>
+		<Metadata name="CommonPicture.CustomerRelationships.Picture" id="12f93a2c-9387-486e-8bc9-dd69d783eac7.0" configVersion="689735b1258e2e4884c712c0d09751a400000000"/>
+		<Metadata name="CommonPicture.CustomerSegments" id="a9db36c2-8d06-40f3-9eae-5088bb4dd3cc" configVersion="fa4bdd7c8a868c4eb962d805aaf942e800000000"/>
+		<Metadata name="CommonPicture.CustomerSegments.Picture" id="a9db36c2-8d06-40f3-9eae-5088bb4dd3cc.0" configVersion="65e50eca8a6c5642b50b94987a42fa9100000000"/>
+		<Metadata name="CommonPicture.KeyActivity" id="293e4a01-cfb1-437d-bdca-b8c0db930fe9" configVersion="fb75a73668d9274dafc925c5c6c966ff00000000"/>
+		<Metadata name="CommonPicture.KeyActivity.Picture" id="293e4a01-cfb1-437d-bdca-b8c0db930fe9.0" configVersion="03e1461d902c0e439c3c8f99c3f38e1600000000"/>
+		<Metadata name="CommonPicture.KeyPartners" id="fda9ca27-b3e8-4969-8b8b-d0528f074ba7" configVersion="568c0e6e50c39a48a116747b79d2a50f00000000"/>
+		<Metadata name="CommonPicture.KeyPartners.Picture" id="fda9ca27-b3e8-4969-8b8b-d0528f074ba7.0" configVersion="e87601126b6d054e8753f160f5cf853d00000000"/>
+		<Metadata name="CommonPicture.KeyResources" id="950de8d4-785f-41e2-82ff-0822069aeca3" configVersion="acb76af2d1b9494f8367fa307b2157fd00000000"/>
+		<Metadata name="CommonPicture.KeyResources.Picture" id="950de8d4-785f-41e2-82ff-0822069aeca3.0" configVersion="ea8e2b26433dfb459ad4db3f404ca33a00000000"/>
+		<Metadata name="CommonPicture.Revenue" id="ab905fb6-bfcb-4429-94c4-cb8f3634a3d6" configVersion="70087c3d9caaec438e531c85c9fa60bc00000000"/>
+		<Metadata name="CommonPicture.Revenue.Picture" id="ab905fb6-bfcb-4429-94c4-cb8f3634a3d6.0" configVersion="0b76f76c6717b548bbb38708749c6bac00000000"/>
+		<Metadata name="CommonPicture.ValueProposition" id="d65054a9-c087-4479-baa6-609e2ac3457c" configVersion="0b444b2c6f378d41ab5ab01c9ad0021a00000000"/>
+		<Metadata name="CommonPicture.ValueProposition.Picture" id="d65054a9-c087-4479-baa6-609e2ac3457c.0" configVersion="11aba1b3e5c2114fb08a61276ab637dd00000000"/>
+		<Metadata name="CommonPicture.ОбщаяКартинка1" id="506aac4f-10f2-4058-946c-fae81ee266e8" configVersion="77bb3c5a69be3a428f4900174f44b61100000000"/>
+		<Metadata name="CommonPicture.ОбщаяКартинка1.Picture" id="506aac4f-10f2-4058-946c-fae81ee266e8.0" configVersion="63462d9087472a449dd476f3e05cadd600000000"/>
+		<Metadata name="Configuration.ШаблонБизнесМодели" id="c440cdf0-8d9c-4424-b03e-9d3dfd99e6a8" configVersion="57fb334c1ad17040ba40dc8208609e9c00000000"/>
+		<Metadata name="Configuration.ШаблонБизнесМодели.HomePageWorkArea" id="64de92b6-6445-4acb-8a24-0cf550e3e2e6.8" configVersion="f1bd63187f56564e9440ceb774c11ba800000000"/>
+		<Metadata name="Configuration.ШаблонБизнесМодели.SessionModule" id="64de92b6-6445-4acb-8a24-0cf550e3e2e6.7" configVersion="53b44513f46c7049b3ee643c92160d7600000000"/>
+		<Metadata name="Document.Template" id="f65c937e-4e0c-42a5-a807-23c7e6192e36" configVersion="a290bdd4ad51fe47bdb9af72528ef69800000000">
+			<Metadata name="Document.Template.Attribute.Комментарий" id="0993441f-14da-4c1f-8a28-592494dd6d01"/>
+			<Metadata name="Document.Template.TabularSection.CustomerSegments" id="15f28bae-ea2a-4ffb-b2db-519caacd874b"/>
+			<Metadata name="Document.Template.TabularSection.CostStructures.Attribute.Note" id="1857e084-e942-496c-9bbc-3f63f95c6477"/>
+			<Metadata name="Document.Template.TabularSection.CustomerRelatonships.Attribute.Note" id="1e1693c8-d021-416c-988c-9d501ac16c4a"/>
+			<Metadata name="Document.Template.TabularSection.RevenueStreams" id="26de2448-4180-4967-9d1c-53136f7a3502"/>
+			<Metadata name="Document.Template.TabularSection.KeyPartners.Attribute.Note" id="272912fa-c4df-41d2-b6ec-8f2346330d21"/>
+			<Metadata name="Document.Template.TabularSection.KeyResources.Attribute.Note" id="2d4a654b-5b9a-4eaf-bdf0-4ff18f3ad442"/>
+			<Metadata name="Document.Template.TabularSection.Channels" id="4a762c44-97bd-4bcb-babb-5fda05e16380"/>
+			<Metadata name="Document.Template.TabularSection.KeyActivities.Attribute.Note" id="4ee0735f-a837-4bc2-8775-80d176aaec42"/>
+			<Metadata name="Document.Template.TabularSection.ValuePropositions.Attribute.Note" id="5b35e521-832c-4a28-84c9-1a069d4da2a1"/>
+			<Metadata name="Document.Template.TabularSection.RevenueStreams.Attribute.Note" id="62d9f919-aa4d-46a2-bfaf-6f0f4a5eee5a"/>
+			<Metadata name="Document.Template.TabularSection.ValuePropositions" id="641b425a-284d-498c-bdd0-225db4dea1a4"/>
+			<Metadata name="Document.Template.TabularSection.CustomerSegments.Attribute.Note" id="761a1ae2-e9c3-48c3-8dc5-0a1597eff846"/>
+			<Metadata name="Document.Template.TabularSection.KeyResources" id="77d1ff9f-a352-4549-9726-b35ff68b3977"/>
+			<Metadata name="Document.Template.TabularSection.Channels.Attribute.Note" id="82984592-b511-4c4d-aa78-f47e0efb7fab"/>
+			<Metadata name="Document.Template.TabularSection.CostStructures" id="8987b316-4d8d-40fd-a846-ef8da84b23c4"/>
+			<Metadata name="Document.Template.TabularSection.CustomerRelatonships" id="a3be47c7-e063-4e3b-a7ef-207e43cd9acf"/>
+			<Metadata name="Document.Template.TabularSection.KeyPartners" id="a686e14c-c587-4fb7-b4ad-c367e497ae6b"/>
+			<Metadata name="Document.Template.Attribute.Проект" id="b539e275-6a68-4592-a647-263d09cfd9cd"/>
+			<Metadata name="Document.Template.TabularSection.KeyActivities" id="fd487de1-22f9-4632-894b-aeb4e22dda44"/>
+		</Metadata>
+		<Metadata name="Document.Template.Form.ФормаДокумента" id="6a32c5ba-aa52-47b5-9d29-1571c103748e" configVersion="2f28f1408e2ec94bb72155d7e34902c500000000"/>
+		<Metadata name="Document.Template.Form.ФормаДокумента.Form" id="6a32c5ba-aa52-47b5-9d29-1571c103748e.0" configVersion="2df8521d6f79744ea9f57c360bbb793a00000000"/>
+		<Metadata name="Document.Template.Form.ФормаСписка" id="687ac21d-a661-4297-9f6c-4a1c6b57b923" configVersion="444caaa6cd74704bad72de10899cdd1d00000000"/>
+		<Metadata name="Document.Template.Form.ФормаСписка.Form" id="687ac21d-a661-4297-9f6c-4a1c6b57b923.0" configVersion="ed68a8263fe34a4f9bf9cdd8654e6d9d00000000"/>
+		<Metadata name="Document.Template.ManagerModule" id="f65c937e-4e0c-42a5-a807-23c7e6192e36.2" configVersion="daa27b5456c96948bf4bca4a57aa368600000000"/>
+		<Metadata name="Document.Template.ObjectModule" id="f65c937e-4e0c-42a5-a807-23c7e6192e36.0" configVersion="d180f50f3b370f41b797f7ac09fee1b700000000"/>
+		<Metadata name="Document.Template.Template.ШаблонСтандарт" id="08024bc6-e020-4740-9256-ac9eda0311eb" configVersion="234262e7114a4e43a925cb604db22f8100000000"/>
+		<Metadata name="Document.Template.Template.ШаблонСтандарт.Template" id="08024bc6-e020-4740-9256-ac9eda0311eb.0" configVersion="88237e74118d924fb735da99fbeefc1d00000000"/>
+		<Metadata name="Language.Русский" id="be4967a0-edd8-406e-a459-a252eaa653fb" configVersion="22a695a99ae21d44a84f76c730abbd2000000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

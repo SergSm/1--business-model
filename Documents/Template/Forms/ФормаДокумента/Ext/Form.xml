@@ -1,0 +1,686 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ПровестиИЗакрыть" id="193">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.PostAndClose</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Закрыть</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПровестиИЗакрытьРасширеннаяПодсказка" id="194"/>
+			</Button>
+			<Button name="ФормаПечать" id="191">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Печать</CommandName>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="192"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаМета" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГруппаГоризонтШапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа мета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМетаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Проект" id="188">
+					<DataPath>Объект.Проект</DataPath>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="189"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="190"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГоризонтВерх" id="180">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт верх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт верх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтВерхРасширеннаяПодсказка" id="181"/>
+			<ChildItems>
+				<Table name="KeyPartners" id="85">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.KeyPartners</DataPath>
+					<TitleTextColor>#3366FF</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="KeyPartnersКонтекстноеМеню" id="86"/>
+					<AutoCommandBar name="KeyPartnersКоманднаяПанель" id="87">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="KeyPartnersРасширеннаяПодсказка" id="88"/>
+					<SearchStringAddition name="KeyPartnersСтрокаПоиска" id="89">
+						<AdditionSource>
+							<Item>KeyPartners</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="KeyPartnersСтрокаПоискаКонтекстноеМеню" id="90"/>
+						<ExtendedTooltip name="KeyPartnersСтрокаПоискаРасширеннаяПодсказка" id="91"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="KeyPartnersСостояниеПросмотра" id="92">
+						<AdditionSource>
+							<Item>KeyPartners</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="KeyPartnersСостояниеПросмотраКонтекстноеМеню" id="93"/>
+						<ExtendedTooltip name="KeyPartnersСостояниеПросмотраРасширеннаяПодсказка" id="94"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="KeyPartnersУправлениеПоиском" id="95">
+						<AdditionSource>
+							<Item>KeyPartners</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="KeyPartnersУправлениеПоискомКонтекстноеМеню" id="96"/>
+						<ExtendedTooltip name="KeyPartnersУправлениеПоискомРасширеннаяПодсказка" id="97"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="KeyPartnersНомерСтроки" id="98">
+							<DataPath>Объект.KeyPartners.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="KeyPartnersНомерСтрокиКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="KeyPartnersНомерСтрокиРасширеннаяПодсказка" id="100"/>
+						</LabelField>
+						<InputField name="KeyPartnersNote" id="101">
+							<DataPath>Объект.KeyPartners.Note</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.KeyPartners</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<ContextMenu name="KeyPartnersNoteКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="KeyPartnersNoteРасширеннаяПодсказка" id="103"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ПодГруппаВерх" id="182">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Под группа верх</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Под группа верх</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПодГруппаВерхРасширеннаяПодсказка" id="183"/>
+					<ChildItems>
+						<Table name="KeyActivities" id="142">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.KeyActivities</DataPath>
+							<TitleTextColor>#339966</TitleTextColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="KeyActivitiesКонтекстноеМеню" id="143"/>
+							<AutoCommandBar name="KeyActivitiesКоманднаяПанель" id="144">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="KeyActivitiesРасширеннаяПодсказка" id="145"/>
+							<SearchStringAddition name="KeyActivitiesСтрокаПоиска" id="146">
+								<AdditionSource>
+									<Item>KeyActivities</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyActivitiesСтрокаПоискаКонтекстноеМеню" id="147"/>
+								<ExtendedTooltip name="KeyActivitiesСтрокаПоискаРасширеннаяПодсказка" id="148"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="KeyActivitiesСостояниеПросмотра" id="149">
+								<AdditionSource>
+									<Item>KeyActivities</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyActivitiesСостояниеПросмотраКонтекстноеМеню" id="150"/>
+								<ExtendedTooltip name="KeyActivitiesСостояниеПросмотраРасширеннаяПодсказка" id="151"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="KeyActivitiesУправлениеПоиском" id="152">
+								<AdditionSource>
+									<Item>KeyActivities</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyActivitiesУправлениеПоискомКонтекстноеМеню" id="153"/>
+								<ExtendedTooltip name="KeyActivitiesУправлениеПоискомРасширеннаяПодсказка" id="154"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="KeyActivitiesНомерСтроки" id="155">
+									<DataPath>Объект.KeyActivities.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="KeyActivitiesНомерСтрокиКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="KeyActivitiesНомерСтрокиРасширеннаяПодсказка" id="157"/>
+								</LabelField>
+								<InputField name="KeyActivitiesNote" id="158">
+									<DataPath>Объект.KeyActivities.Note</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="KeyActivitiesNoteКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="KeyActivitiesNoteРасширеннаяПодсказка" id="160"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="KeyResources" id="123">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.KeyResources</DataPath>
+							<TitleTextColor>#BA9570</TitleTextColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="KeyResourcesКонтекстноеМеню" id="124"/>
+							<AutoCommandBar name="KeyResourcesКоманднаяПанель" id="125">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="KeyResourcesРасширеннаяПодсказка" id="126"/>
+							<SearchStringAddition name="KeyResourcesСтрокаПоиска" id="127">
+								<AdditionSource>
+									<Item>KeyResources</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyResourcesСтрокаПоискаКонтекстноеМеню" id="128"/>
+								<ExtendedTooltip name="KeyResourcesСтрокаПоискаРасширеннаяПодсказка" id="129"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="KeyResourcesСостояниеПросмотра" id="130">
+								<AdditionSource>
+									<Item>KeyResources</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyResourcesСостояниеПросмотраКонтекстноеМеню" id="131"/>
+								<ExtendedTooltip name="KeyResourcesСостояниеПросмотраРасширеннаяПодсказка" id="132"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="KeyResourcesУправлениеПоиском" id="133">
+								<AdditionSource>
+									<Item>KeyResources</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="KeyResourcesУправлениеПоискомКонтекстноеМеню" id="134"/>
+								<ExtendedTooltip name="KeyResourcesУправлениеПоискомРасширеннаяПодсказка" id="135"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="KeyResourcesНомерСтроки" id="136">
+									<DataPath>Объект.KeyResources.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="KeyResourcesНомерСтрокиКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="KeyResourcesНомерСтрокиРасширеннаяПодсказка" id="138"/>
+								</LabelField>
+								<InputField name="KeyResourcesNote" id="139">
+									<DataPath>Объект.KeyResources.Note</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="KeyResourcesNoteКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="KeyResourcesNoteРасширеннаяПодсказка" id="141"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ValuePropositions" id="66">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ValuePropositions</DataPath>
+					<TitleTextColor>#CE2819</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ValuePropositionsКонтекстноеМеню" id="67"/>
+					<AutoCommandBar name="ValuePropositionsКоманднаяПанель" id="68">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ValuePropositionsРасширеннаяПодсказка" id="69"/>
+					<SearchStringAddition name="ValuePropositionsСтрокаПоиска" id="70">
+						<AdditionSource>
+							<Item>ValuePropositions</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ValuePropositionsСтрокаПоискаКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ValuePropositionsСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ValuePropositionsСостояниеПросмотра" id="73">
+						<AdditionSource>
+							<Item>ValuePropositions</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ValuePropositionsСостояниеПросмотраКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="ValuePropositionsСостояниеПросмотраРасширеннаяПодсказка" id="75"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ValuePropositionsУправлениеПоиском" id="76">
+						<AdditionSource>
+							<Item>ValuePropositions</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ValuePropositionsУправлениеПоискомКонтекстноеМеню" id="77"/>
+						<ExtendedTooltip name="ValuePropositionsУправлениеПоискомРасширеннаяПодсказка" id="78"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ValuePropositionsНомерСтроки" id="79">
+							<DataPath>Объект.ValuePropositions.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="ValuePropositionsНомерСтрокиКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ValuePropositionsНомерСтрокиРасширеннаяПодсказка" id="81"/>
+						</LabelField>
+						<InputField name="ValuePropositionsNote" id="82">
+							<DataPath>Объект.ValuePropositions.Note</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ValuePropositionsNoteКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ValuePropositionsNoteРасширеннаяПодсказка" id="84"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ПодГруппаВерх2" id="184">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Под группа верх2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Под группа верх2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ПодГруппаВерх2РасширеннаяПодсказка" id="185"/>
+					<ChildItems>
+						<Table name="CustomerRelatonships" id="47">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.CustomerRelatonships</DataPath>
+							<TitleTextColor>#008000</TitleTextColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="CustomerRelatonshipsКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="CustomerRelatonshipsКоманднаяПанель" id="49">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="CustomerRelatonshipsРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="CustomerRelatonshipsСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>CustomerRelatonships</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="CustomerRelatonshipsСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="CustomerRelatonshipsСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="CustomerRelatonshipsСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>CustomerRelatonships</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="CustomerRelatonshipsСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="CustomerRelatonshipsСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="CustomerRelatonshipsУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>CustomerRelatonships</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="CustomerRelatonshipsУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="CustomerRelatonshipsУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="CustomerRelatonshipsНомерСтроки" id="60">
+									<DataPath>Объект.CustomerRelatonships.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="CustomerRelatonshipsНомерСтрокиКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="CustomerRelatonshipsНомерСтрокиРасширеннаяПодсказка" id="62"/>
+								</LabelField>
+								<InputField name="CustomerRelatonshipsNote" id="63">
+									<DataPath>Объект.CustomerRelatonships.Note</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="CustomerRelatonshipsNoteКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="CustomerRelatonshipsNoteРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="Channels" id="161">
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Channels</DataPath>
+							<TitleTextColor>#CC99FF</TitleTextColor>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ChannelsКонтекстноеМеню" id="162"/>
+							<AutoCommandBar name="ChannelsКоманднаяПанель" id="163">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ChannelsРасширеннаяПодсказка" id="164"/>
+							<SearchStringAddition name="ChannelsСтрокаПоиска" id="165">
+								<AdditionSource>
+									<Item>Channels</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ChannelsСтрокаПоискаКонтекстноеМеню" id="166"/>
+								<ExtendedTooltip name="ChannelsСтрокаПоискаРасширеннаяПодсказка" id="167"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ChannelsСостояниеПросмотра" id="168">
+								<AdditionSource>
+									<Item>Channels</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ChannelsСостояниеПросмотраКонтекстноеМеню" id="169"/>
+								<ExtendedTooltip name="ChannelsСостояниеПросмотраРасширеннаяПодсказка" id="170"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ChannelsУправлениеПоиском" id="171">
+								<AdditionSource>
+									<Item>Channels</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ChannelsУправлениеПоискомКонтекстноеМеню" id="172"/>
+								<ExtendedTooltip name="ChannelsУправлениеПоискомРасширеннаяПодсказка" id="173"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ChannelsНомерСтроки" id="174">
+									<DataPath>Объект.Channels.LineNumber</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ChannelsНомерСтрокиКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ChannelsНомерСтрокиРасширеннаяПодсказка" id="176"/>
+								</LabelField>
+								<InputField name="ChannelsNote" id="177">
+									<DataPath>Объект.Channels.Note</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ChannelsNoteКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="ChannelsNoteРасширеннаяПодсказка" id="179"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="CustomerSegments" id="9">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.CustomerSegments</DataPath>
+					<TitleTextColor>#993366</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="CustomerSegmentsКонтекстноеМеню" id="10"/>
+					<AutoCommandBar name="CustomerSegmentsКоманднаяПанель" id="11">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="CustomerSegmentsРасширеннаяПодсказка" id="12"/>
+					<SearchStringAddition name="CustomerSegmentsСтрокаПоиска" id="13">
+						<AdditionSource>
+							<Item>CustomerSegments</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CustomerSegmentsСтрокаПоискаКонтекстноеМеню" id="14"/>
+						<ExtendedTooltip name="CustomerSegmentsСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="CustomerSegmentsСостояниеПросмотра" id="16">
+						<AdditionSource>
+							<Item>CustomerSegments</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CustomerSegmentsСостояниеПросмотраКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="CustomerSegmentsСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="CustomerSegmentsУправлениеПоиском" id="19">
+						<AdditionSource>
+							<Item>CustomerSegments</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="CustomerSegmentsУправлениеПоискомКонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="CustomerSegmentsУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="CustomerSegmentsНомерСтроки" id="22">
+							<DataPath>Объект.CustomerSegments.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="CustomerSegmentsНомерСтрокиКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="CustomerSegmentsНомерСтрокиРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+						<InputField name="CustomerSegmentsNote" id="25">
+							<DataPath>Объект.CustomerSegments.Note</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CustomerSegmentsNoteКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="CustomerSegmentsNoteРасширеннаяПодсказка" id="27"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГоризонтНиз" id="186">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт низ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа горизонт низ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтНизРасширеннаяПодсказка" id="187"/>
+			<ChildItems>
+				<Table name="CostStructures" id="104">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.CostStructures</DataPath>
+					<TitleTextColor>#FF00FF</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="CostStructuresКонтекстноеМеню" id="105"/>
+					<AutoCommandBar name="CostStructuresКоманднаяПанель" id="106">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="CostStructuresРасширеннаяПодсказка" id="107"/>
+					<SearchStringAddition name="CostStructuresСтрокаПоиска" id="108">
+						<AdditionSource>
+							<Item>CostStructures</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CostStructuresСтрокаПоискаКонтекстноеМеню" id="109"/>
+						<ExtendedTooltip name="CostStructuresСтрокаПоискаРасширеннаяПодсказка" id="110"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="CostStructuresСостояниеПросмотра" id="111">
+						<AdditionSource>
+							<Item>CostStructures</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="CostStructuresСостояниеПросмотраКонтекстноеМеню" id="112"/>
+						<ExtendedTooltip name="CostStructuresСостояниеПросмотраРасширеннаяПодсказка" id="113"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="CostStructuresУправлениеПоиском" id="114">
+						<AdditionSource>
+							<Item>CostStructures</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="CostStructuresУправлениеПоискомКонтекстноеМеню" id="115"/>
+						<ExtendedTooltip name="CostStructuresУправлениеПоискомРасширеннаяПодсказка" id="116"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="CostStructuresНомерСтроки" id="117">
+							<DataPath>Объект.CostStructures.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="CostStructuresНомерСтрокиКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="CostStructuresНомерСтрокиРасширеннаяПодсказка" id="119"/>
+						</LabelField>
+						<InputField name="CostStructuresNote" id="120">
+							<DataPath>Объект.CostStructures.Note</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="CostStructuresNoteКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="CostStructuresNoteРасширеннаяПодсказка" id="122"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="RevenueStreams" id="28">
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.RevenueStreams</DataPath>
+					<TitleTextColor>#0000FF</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="RevenueStreamsКонтекстноеМеню" id="29"/>
+					<AutoCommandBar name="RevenueStreamsКоманднаяПанель" id="30">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="RevenueStreamsРасширеннаяПодсказка" id="31"/>
+					<SearchStringAddition name="RevenueStreamsСтрокаПоиска" id="32">
+						<AdditionSource>
+							<Item>RevenueStreams</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="RevenueStreamsСтрокаПоискаКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="RevenueStreamsСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="RevenueStreamsСостояниеПросмотра" id="35">
+						<AdditionSource>
+							<Item>RevenueStreams</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="RevenueStreamsСостояниеПросмотраКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="RevenueStreamsСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="RevenueStreamsУправлениеПоиском" id="38">
+						<AdditionSource>
+							<Item>RevenueStreams</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="RevenueStreamsУправлениеПоискомКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="RevenueStreamsУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="RevenueStreamsНомерСтроки" id="41">
+							<DataPath>Объект.RevenueStreams.LineNumber</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="RevenueStreamsНомерСтрокиКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="RevenueStreamsНомерСтрокиРасширеннаяПодсказка" id="43"/>
+						</LabelField>
+						<InputField name="RevenueStreamsNote" id="44">
+							<DataPath>Объект.RevenueStreams.Note</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="RevenueStreamsNoteКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="RevenueStreamsNoteРасширеннаяПодсказка" id="46"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="195">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="196"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="197"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Template</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>
